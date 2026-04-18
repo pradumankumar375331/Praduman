@@ -1,231 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- SEO -->
   <meta name="description" content="Praduman Kumar Portfolio - Python Developer & CSE Student">
-  <meta name="keywords" content="Python Developer, Portfolio, CSE, Bihar, Web Developer">
+  <meta name="keywords" content="Python Developer, Portfolio, CSE Student, Bihar">
   <meta name="author" content="Praduman Kumar">
 
-  <title>Praduman Kumar | Python Developer</title>
+  <title>Praduman Kumar | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=DM+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'DM Sans', sans-serif;
-      background: #0f172a;
-      color: #fff;
-    }
-
-    a { text-decoration: none; color: inherit; }
-
-    .container { width: 90%; max-width: 1100px; margin: auto; }
-
-    /* Navbar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      background: #020617;
-      position: sticky;
-      top: 0;
-    }
-
-    .nav-links a { margin: 0 10px; }
-
-    /* Hero */
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h1 { font-size: 50px; }
-
-    .btn {
-      padding: 10px 20px;
-      margin: 10px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-primary { background: #3b82f6; color: #fff; }
-
-    /* Sections */
-    section { padding: 60px 0; }
-
-    .section-title {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-
-    /* Cards */
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 10px 0;
-    }
-
-    /* Skills */
-    .skill { margin-bottom: 10px; }
-
-    .bar {
-      height: 8px;
-      background: #334155;
-      border-radius: 5px;
-    }
-
-    .fill {
-      height: 8px;
-      background: #3b82f6;
-      border-radius: 5px;
-    }
-
-    /* Contact */
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-    }
-  </style>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <h2>PK.</h2>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+
+    <a href="#hero" class="nav-logo">PK<span>.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="themeToggle"><i class="fa-solid fa-sun"></i></button>
+      <button id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Praduman Kumar</h1>
-  <p>Python Developer & Diploma CSE Student</p>
-  <p>Actively seeking internship opportunities</p>
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <p>● Actively Seeking Internship</p>
+    <h1>Praduman Kumar</h1>
+    <h2>Python Developer & Diploma CSE Student</h2>
+    <p>Building real-world solutions using Python and modern technologies.</p>
 
-  <button class="btn btn-primary">Hire Me</button>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Hire Me</a>
+      <a href="#projects" class="btn btn-outline">View Projects</a>
+    </div>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="container">
-  <h2 class="section-title">About Me</h2>
-  <div class="card">
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="container">
+
+    <h2 class="section-title">About Me</h2>
+
     <p>
-      I am a Diploma CSE student at Government Polytechnic Muzaffarpur.
-      I have strong interest in Python programming, software development,
-      and solving real-world problems.
+      I am a Diploma student in Computer Science & Engineering at Government Polytechnic Muzaffarpur.
+      I have hands-on experience in Python programming and a strong interest in solving real-world problems.
     </p>
+
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="container">
-  <h2 class="section-title">Skills</h2>
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <div class="container">
 
-  <div class="skill">
-    Python
-    <div class="bar"><div class="fill" style="width:75%"></div></div>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill">
+        <p>Python</p>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Computer Science Fundamentals</p>
+        <div class="bar"><div class="fill" style="width:70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Web Development</p>
+        <div class="bar"><div class="fill" style="width:55%"></div></div>
+      </div>
+
+    </div>
+
   </div>
-
-  <div class="skill">
-    CSE Fundamentals
-    <div class="bar"><div class="fill" style="width:70%"></div></div>
-  </div>
-
-  <div class="skill">
-    HTML/CSS
-    <div class="bar"><div class="fill" style="width:55%"></div></div>
-  </div>
-
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="container">
-  <h2 class="section-title">Projects</h2>
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section">
+  <div class="container">
 
-  <div class="card">
-    <h3>Python Calculator</h3>
-    <p>CLI-based calculator with error handling.</p>
+    <h2 class="section-title">Education</h2>
+
+    <div class="card">
+      <h3>Diploma in CSE</h3>
+      <p>Government Polytechnic Muzaffarpur (2022–Present)</p>
+    </div>
+
+    <div class="card">
+      <h3>ITI</h3>
+      <p>Govt ITI Dalsinghsarai (2020–2022)</p>
+    </div>
+
   </div>
-
-  <div class="card">
-    <h3>Contact Management System</h3>
-    <p>CRUD system using Python file handling.</p>
-  </div>
-
-  <div class="card">
-    <h3>Weather App</h3>
-    <p>Uses API to fetch weather data.</p>
-  </div>
-
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="container">
-  <h2 class="section-title">Contact Me</h2>
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+  <div class="container">
 
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Your Name">
-    <input type="email" id="email" placeholder="Your Email">
-    <input type="text" id="subject" placeholder="Subject">
-    <textarea id="message" placeholder="Message"></textarea>
+    <h2 class="section-title">Experience</h2>
 
-    <button class="btn btn-primary" type="submit">Send Message</button>
-    <p id="successMsg" style="display:none;color:lightgreen;">Message Sent!</p>
-  </form>
+    <div class="card">
+      <h3>Python Intern</h3>
+      <p>Sri Ram Engineering Industries Pvt. Ltd.</p>
+      <p>Oct 2025 – Nov 2025</p>
+    </div>
+
+  </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 Praduman Kumar</p>
-  <p>
-    <a href="#">GitHub</a> |
-    <a href="#">LinkedIn</a>
-  </p>
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <div class="container">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card">
+      <h3>Python Calculator</h3>
+      <p>CLI-based calculator with error handling</p>
+    </div>
+
+    <div class="card">
+      <h3>Contact Management System</h3>
+      <p>CRUD application using Python</p>
+    </div>
+
+    <div class="card">
+      <h3>Weather App</h3>
+      <p>API-based weather data fetcher</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <div class="container">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <form id="contactForm">
+
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <input type="text" id="subject" placeholder="Subject">
+      <textarea id="message" placeholder="Message"></textarea>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+
+    <p>© 2025 Praduman Kumar</p>
+
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+
+  </div>
 </footer>
 
-<!-- JAVASCRIPT -->
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  let name = document.getElementById("name").value.trim();
-  let email = document.getElementById("email").value.trim();
-  let subject = document.getElementById("subject").value.trim();
-  let message = document.getElementById("message").value.trim();
-
-  if (!name || !email || !subject || !message) {
-    alert("Please fill all fields!");
-    return;
-  }
-
-  document.getElementById("successMsg").style.display = "block";
-  this.reset();
-});
-</script>
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
