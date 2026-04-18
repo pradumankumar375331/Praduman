@@ -1,203 +1,85 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praduman Kumar Portfolio</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Praduman Kumar Portfolio - Python Developer & CSE Student">
-  <meta name="keywords" content="Python Developer, Portfolio, CSE Student, Bihar">
-  <meta name="author" content="Praduman Kumar">
-
-  <title>Praduman Kumar | Portfolio</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-
-    <a href="#hero" class="nav-logo">PK<span>.</span></a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="nav-actions">
-      <button id="themeToggle"><i class="fa-solid fa-sun"></i></button>
-      <button id="hamburger"><span></span><span></span><span></span></button>
-    </div>
-
-  </div>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">PK.</h2>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="themeToggle"><i class="fa-solid fa-sun"></i></button>
 </nav>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="hero">
-  <div class="hero-content">
-    <p>● Actively Seeking Internship</p>
-    <h1>Praduman Kumar</h1>
-    <h2>Python Developer & Diploma CSE Student</h2>
-    <p>Building real-world solutions using Python and modern technologies.</p>
-
-    <div class="hero-cta">
-      <a href="#contact" class="btn btn-primary">Hire Me</a>
-      <a href="#projects" class="btn btn-outline">View Projects</a>
-    </div>
-  </div>
+<!-- HERO -->
+<section class="hero">
+  <h1>Praduman <span>Kumar</span></h1>
+  <p>Diploma CSE Student & Python Developer</p>
 </section>
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 <section id="about" class="section">
-  <div class="container">
-
-    <h2 class="section-title">About Me</h2>
-
-    <p>
-      I am a Diploma student in Computer Science & Engineering at Government Polytechnic Muzaffarpur.
-      I have hands-on experience in Python programming and a strong interest in solving real-world problems.
-    </p>
-
-  </div>
+  <h2>About Me</h2>
+  <p>I am a Diploma student in Computer Science Engineering with strong interest in Python and web development.</p>
 </section>
 
-<!-- ================= SKILLS ================= -->
+<!-- SKILLS -->
 <section id="skills" class="section">
-  <div class="container">
-
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills-grid">
-
-      <div class="skill">
-        <p>Python</p>
-        <div class="bar"><div class="fill" style="width:75%"></div></div>
-      </div>
-
-      <div class="skill">
-        <p>Computer Science Fundamentals</p>
-        <div class="bar"><div class="fill" style="width:70%"></div></div>
-      </div>
-
-      <div class="skill">
-        <p>Web Development</p>
-        <div class="bar"><div class="fill" style="width:55%"></div></div>
-      </div>
-
-    </div>
-
+  <h2>Skills</h2>
+  <div class="skills">
+    <div>Python</div>
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
   </div>
 </section>
 
-<!-- ================= EDUCATION ================= -->
-<section id="education" class="section">
-  <div class="container">
-
-    <h2 class="section-title">Education</h2>
-
-    <div class="card">
-      <h3>Diploma in CSE</h3>
-      <p>Government Polytechnic Muzaffarpur (2022–Present)</p>
-    </div>
-
-    <div class="card">
-      <h3>ITI</h3>
-      <p>Govt ITI Dalsinghsarai (2020–2022)</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= EXPERIENCE ================= -->
-<section id="experience" class="section">
-  <div class="container">
-
-    <h2 class="section-title">Experience</h2>
-
-    <div class="card">
-      <h3>Python Intern</h3>
-      <p>Sri Ram Engineering Industries Pvt. Ltd.</p>
-      <p>Oct 2025 – Nov 2025</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= PROJECTS ================= -->
+<!-- PROJECTS -->
 <section id="projects" class="section">
-  <div class="container">
+  <h2>Projects</h2>
 
-    <h2 class="section-title">Projects</h2>
-
-    <div class="card">
-      <h3>Python Calculator</h3>
-      <p>CLI-based calculator with error handling</p>
-    </div>
-
-    <div class="card">
-      <h3>Contact Management System</h3>
-      <p>CRUD application using Python</p>
-    </div>
-
-    <div class="card">
-      <h3>Weather App</h3>
-      <p>API-based weather data fetcher</p>
-    </div>
-
+  <div class="project">
+    <h3>Python Calculator</h3>
+    <p>CLI based calculator</p>
   </div>
+
+  <div class="project">
+    <h3>Contact Manager</h3>
+    <p>CRUD system in Python</p>
+  </div>
+
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 <section id="contact" class="section">
-  <div class="container">
+  <h2>Contact</h2>
 
-    <h2 class="section-title">Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
 
-    <form id="contactForm">
-
-      <input type="text" id="name" placeholder="Your Name">
-      <input type="email" id="email" placeholder="Your Email">
-      <input type="text" id="subject" placeholder="Subject">
-      <textarea id="message" placeholder="Message"></textarea>
-
-      <button type="submit" class="btn btn-primary">Send Message</button>
-
-    </form>
-
-  </div>
+  <p id="successMsg"></p>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="container">
-
-    <p>© 2025 Praduman Kumar</p>
-
-    <div class="socials">
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-    </div>
-
-  </div>
-</footer>
-
-<!-- JS -->
 <script src="script.js"></script>
-
 </body>
 </html>
