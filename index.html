@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Praduman Kumar Portfolio - Python Developer & CSE Student">
+  <meta name="keywords" content="Python Developer, Portfolio, CSE, Bihar, Web Developer">
+  <meta name="author" content="Praduman Kumar">
+
+  <title>Praduman Kumar | Python Developer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=DM+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      background: #0f172a;
+      color: #fff;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container { width: 90%; max-width: 1100px; margin: auto; }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    .nav-links a { margin: 0 10px; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 { font-size: 50px; }
+
+    .btn {
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary { background: #3b82f6; color: #fff; }
+
+    /* Sections */
+    section { padding: 60px 0; }
+
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* Cards */
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    /* Skills */
+    .skill { margin-bottom: 10px; }
+
+    .bar {
+      height: 8px;
+      background: #334155;
+      border-radius: 5px;
+    }
+
+    .fill {
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 5px;
+    }
+
+    /* Contact */
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>PK.</h2>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Praduman Kumar</h1>
+  <p>Python Developer & Diploma CSE Student</p>
+  <p>Actively seeking internship opportunities</p>
+
+  <button class="btn btn-primary">Hire Me</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container">
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
+    <p>
+      I am a Diploma CSE student at Government Polytechnic Muzaffarpur.
+      I have strong interest in Python programming, software development,
+      and solving real-world problems.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="container">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skill">
+    Python
+    <div class="bar"><div class="fill" style="width:75%"></div></div>
+  </div>
+
+  <div class="skill">
+    CSE Fundamentals
+    <div class="bar"><div class="fill" style="width:70%"></div></div>
+  </div>
+
+  <div class="skill">
+    HTML/CSS
+    <div class="bar"><div class="fill" style="width:55%"></div></div>
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="card">
+    <h3>Python Calculator</h3>
+    <p>CLI-based calculator with error handling.</p>
+  </div>
+
+  <div class="card">
+    <h3>Contact Management System</h3>
+    <p>CRUD system using Python file handling.</p>
+  </div>
+
+  <div class="card">
+    <h3>Weather App</h3>
+    <p>Uses API to fetch weather data.</p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+  <h2 class="section-title">Contact Me</h2>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <input type="text" id="subject" placeholder="Subject">
+    <textarea id="message" placeholder="Message"></textarea>
+
+    <button class="btn btn-primary" type="submit">Send Message</button>
+    <p id="successMsg" style="display:none;color:lightgreen;">Message Sent!</p>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Praduman Kumar</p>
+  <p>
+    <a href="#">GitHub</a> |
+    <a href="#">LinkedIn</a>
+  </p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let subject = document.getElementById("subject").value.trim();
+  let message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !subject || !message) {
+    alert("Please fill all fields!");
+    return;
+  }
+
+  document.getElementById("successMsg").style.display = "block";
+  this.reset();
+});
+</script>
+
+</body>
+</html>
