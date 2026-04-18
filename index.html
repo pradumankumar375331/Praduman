@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -16,52 +16,67 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" id="navbar">
   <h2 class="logo">PK.</h2>
+
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+
   <button id="themeToggle"><i class="fa-solid fa-sun"></i></button>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Praduman <span>Kumar</span></h1>
-  <p>Diploma CSE Student & Python Developer</p>
+  <h1>Hi, I'm <span>Praduman Kumar</span></h1>
+  <h2 class="typing"></h2>
+  <a href="#projects" class="btn">View Projects</a>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
+<section id="about" class="section reveal">
   <h2>About Me</h2>
-  <p>I am a Diploma student in Computer Science Engineering with strong interest in Python and web development.</p>
+  <p>
+    Diploma CSE student passionate about Python, Web Development, and building real-world projects.
+  </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="section">
   <h2>Skills</h2>
-  <div class="skills">
-    <div>Python</div>
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JavaScript</div>
+
+  <div class="skill">
+    <p>Python</p>
+    <div class="bar"><div class="fill" data-width="80"></div></div>
   </div>
+
+  <div class="skill">
+    <p>HTML</p>
+    <div class="bar"><div class="fill" data-width="70"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>CSS</p>
+    <div class="bar"><div class="fill" data-width="65"></div></div>
+  </div>
+
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section">
+<section id="projects" class="section reveal">
   <h2>Projects</h2>
 
-  <div class="project">
+  <div class="project-card">
     <h3>Python Calculator</h3>
     <p>CLI based calculator</p>
   </div>
 
-  <div class="project">
-    <h3>Contact Manager</h3>
-    <p>CRUD system in Python</p>
+  <div class="project-card">
+    <h3>Weather App</h3>
+    <p>API based weather fetcher</p>
   </div>
 
 </section>
@@ -70,15 +85,17 @@
 <section id="contact" class="section">
   <h2>Contact</h2>
 
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Name">
-    <input type="email" id="email" placeholder="Email">
-    <textarea id="message" placeholder="Message"></textarea>
+  <form id="form">
+    <input type="text" placeholder="Name" id="name">
+    <input type="email" placeholder="Email" id="email">
+    <textarea placeholder="Message" id="msg"></textarea>
     <button type="submit">Send</button>
   </form>
 
-  <p id="successMsg"></p>
+  <p id="status"></p>
 </section>
+
+<button id="topBtn">↑</button>
 
 <script src="script.js"></script>
 </body>
